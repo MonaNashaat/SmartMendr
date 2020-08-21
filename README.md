@@ -19,4 +19,3 @@ To install smartMendr, you can clone the Git repository and run:
     pip install -e .
 
 within it.
-# SmartMendr
