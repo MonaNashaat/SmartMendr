@@ -4,7 +4,8 @@ from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import Imputer
+#from sklearn.preprocessing import Imputer
+from sklearn.impute import SimpleImputer
 import numpy as np
 import scipy
 import scipy.io as sio
@@ -42,14 +43,13 @@ class Dataset:
 class DDL_Dataset(Dataset):
    
     def __init__(self, df_active_learning):       
-
-	print('Creating the dataset for DLL')
+        print('Creating the dataset for DLL')
         Dataset.__init__(self)
         
         #split the AL_df into X (data with no labels) and Y (true lablels)
         X_Original= (df_active_learning.loc[:, df_active_learning.columns != 'prediction'])
         X_full= (X_Original.loc[:, X_Original.columns != 'prediction'])
-	X_full= (X_full.loc[:, X_full.columns != 'ground_truth'])
+        X_full= (X_full.loc[:, X_full.columns != 'ground_truth'])
         X_full = X_full.values
         y_full= (df_active_learning['ground_truth'])
         y_full=y_full.values

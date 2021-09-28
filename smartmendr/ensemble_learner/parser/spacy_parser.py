@@ -7,7 +7,7 @@ from builtins import *
 import pkg_resources
 from pathlib import Path
 from collections import defaultdict
-from heuristics_generator.models import construct_stable_id
+from smartmendr.ensemble_learner.models import construct_stable_id
 from .parser import Parser, ParserConnection
 
 try:

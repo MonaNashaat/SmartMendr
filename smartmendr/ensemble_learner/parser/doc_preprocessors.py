@@ -12,7 +12,7 @@ import lxml.etree as et
 
 from bs4 import BeautifulSoup
 
-from heuristics_generator.models import Document
+from smartmendr.ensemble_learner.models import Document
 
 
 class DocPreprocessor(object):

@@ -5,8 +5,8 @@ from __future__ import unicode_literals
 from builtins import *
 
 from .spacy_parser import Spacy
-from heuristics_generator.models import Candidate, Context, Sentence
-from heuristics_generator.udf import UDF, UDFRunner
+from smartmendr.ensemble_learner.models import Candidate, Context, Sentence
+from smartmendr.ensemble_learner.udf import UDF, UDFRunner
 
 
 class CorpusParser(UDFRunner):

@@ -1,9 +1,9 @@
 from sklearn.ensemble import RandomForestRegressor
-from data_learner.active_learner import *
-from data_learner.models import DDL_Dataset 
-from data_learner.lal_model import LALmodel
-from data_learner.experiment import Experiment
-from data_learner.results import Results
+from smartmendr.data_learner.active_learner import *
+from smartmendr.data_learner.models import DDL_Dataset 
+from smartmendr.data_learner.lal_model import LALmodel
+from smartmendr.data_learner.experiment import Experiment
+from smartmendr.data_learner.results import Results
 import numpy as np
 
 def run_dll(lalModel,labeling_budget,df_active_learning):

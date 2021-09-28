@@ -6,7 +6,7 @@ from builtins import *
 
 import numpy as np
 from .utils import MentionScorer
-from heuristics_generator.models import *
+from smartmendr.ensemble_learner.models import *
 
 class Classifier(object):
     """Simple abstract base class for a probabilistic classifier."""
